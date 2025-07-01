@@ -5,20 +5,23 @@ import spiderImage from "./assets/spider-man.jpg";
 import { WelcomeMessage } from "./components/WelcomeMesssage/WelcomeMessage.jsx";
 import { Product } from "./components/Product/Product.jsx";
 import nikeBoots from "./assets/zapatillas-nike.jpg";
+import { Box } from "./components/Box/Box.jsx";
 
 export const App = () => {
 	return (
 		<>
-			<UserCard
-				name="Fer"
-				age={30}
-				city="Madrid"
-				image={spiderImage}
-				nameAvatar={"Fer"}
-				buttonText="Click me!"
-				textQuote="In the middle of every difficulty lies opportunity."
-				author="Albert Einstein"
-			/>
+			<Box>
+				<UserCard
+					name="Fer"
+					age={30}
+					city="Madrid"
+					image={spiderImage}
+					nameAvatar={"Fer"}
+					buttonText="Click me!"
+					textQuote="In the middle of every difficulty lies opportunity."
+					author="Albert Einstein"
+				/>
+			</Box>
 			<WelcomeMessage name="Fer" />
 
 			<UserCard
@@ -41,6 +44,20 @@ export const App = () => {
 				alertType="info"
 				number={0}
 			/>
+
+			<Box>
+				<h1>Hola, mundo!</h1>
+				<p>Esto es un párrafo dentro de la caja.</p>
+			</Box>
+
+			<Box>
+				<h2>Lista de tareas</h2>
+				<ul>
+					<li>Aprender React</li>
+					<li>Hacer ejercicio</li>
+					<li>Leer un libro</li>
+				</ul>
+			</Box>
 		</>
 	);
 };
