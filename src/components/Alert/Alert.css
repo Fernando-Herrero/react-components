@@ -1,0 +1,23 @@
+.alert-message {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 16px;
+	padding: 12px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.alert-message.success {
+	background-color: #d4edda;
+	color: #155724;
+}
+
+.alert-message.error {
+	background-color: #f8d7da;
+	color: #721c24;
+}
+
+.alert-message.info {
+	background-color: #d1ecf1;
+	color: #0c5460;
+}

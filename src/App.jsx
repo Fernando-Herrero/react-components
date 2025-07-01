@@ -27,6 +27,7 @@ export const App = () => {
 				name={"Nike Mercurial Vapor Fly VII"}
 				price={250}
 				description={"High-performance football boots designed for speed and agility on the pitch."}
+				alertType="info"
 			/>
 		</>
 	);
