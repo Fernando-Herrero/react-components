@@ -6,6 +6,8 @@ import { WelcomeMessage } from "./components/WelcomeMesssage/WelcomeMessage.jsx"
 import { Product } from "./components/Product/Product.jsx";
 import nikeBoots from "./assets/zapatillas-nike.jpg";
 import { Box } from "./components/Box/Box.jsx";
+import bananaImage from "./assets/banana.webp";
+import strawberryImage from "./assets/strawberry.jpg";
 
 export const App = () => {
 	return (
@@ -20,6 +22,8 @@ export const App = () => {
 					buttonText="Click me!"
 					textQuote="In the middle of every difficulty lies opportunity."
 					author="Albert Einstein"
+					fruit="Banana"
+					imageFruit={bananaImage}
 				/>
 			</Box>
 			<WelcomeMessage name="Fer" />
@@ -33,6 +37,8 @@ export const App = () => {
 				buttonText="Send me!"
 				textQuote="The only limit to our realization of tomorrow is our doubts of today."
 				author="Franklin D. Roosevelt"
+				fruit="Strawberry"
+				imageFruit={strawberryImage}
 			/>
 			<WelcomeMessage name="Paola" />
 

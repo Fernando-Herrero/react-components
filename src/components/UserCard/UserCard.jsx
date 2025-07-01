@@ -2,8 +2,9 @@ import "./UserCard.css";
 import { CustomButton } from "../CustomButton/CustomButton.jsx";
 import { Avatar } from "../Avatar/Avatar.jsx";
 import { Quote } from "../Quote/Quote.jsx";
+import { FavoriteFruit } from "../FavoriteFruit/FavoriteFruit.jsx";
 
-export const UserCard = ({ name, age, city, buttonText, image, nameAvatar, textQuote, author }) => {
+export const UserCard = ({ name, age, city, buttonText, image, nameAvatar, textQuote, author, fruit, imageFruit }) => {
 	return (
 		<>
 			<div className="user-card">
@@ -16,6 +17,8 @@ export const UserCard = ({ name, age, city, buttonText, image, nameAvatar, textQ
 				<CustomButton text={buttonText} />
 
 				<Quote text={textQuote} author={author} />
+
+				<FavoriteFruit fruit={fruit} image={imageFruit} />
 			</div>
 		</>
 	);
