@@ -1,0 +1,25 @@
+.quote-card {
+	background-color: #f9f9f9;
+	border-left: 4px solid #0074e4; /* azul agradable para resaltar */
+	padding: 16px 24px;
+	margin: 20px auto;
+	max-width: 600px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	font-family: "Georgia", serif;
+	color: #333;
+}
+
+.quote-text {
+	font-size: 1.25rem;
+	font-style: italic;
+	margin-bottom: 12px;
+	line-height: 1.5;
+}
+
+.quote-author {
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: right;
+	color: #555;
+}

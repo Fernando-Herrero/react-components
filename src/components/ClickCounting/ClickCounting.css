@@ -1,0 +1,15 @@
+.countButton {
+	background-color: #0074e4;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 6px;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-size: 16px;
+}
+
+.countButton:hover {
+	background-color: #005bb5;
+}

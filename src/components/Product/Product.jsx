@@ -1,7 +1,8 @@
 import { GetAlertMessage } from "../Alert/Alert.jsx";
+import { ClickCounting } from "../ClickCounting/ClickCouning.jsx";
 import "./Product.css";
 
-export const Product = ({ name, price, image, description, alertType }) => {
+export const Product = ({ name, price, image, description, alertType, number }) => {
 	return (
 		<div className="product-card">
 			<img src={image} alt={name} className="product-image" />
@@ -12,6 +13,8 @@ export const Product = ({ name, price, image, description, alertType }) => {
 			<p className="product-description">{description}</p>
 
 			{alertType && <GetAlertMessage alertType={alertType} />}
+
+			<ClickCounting number={number} />
 		</div>
 	);
 };

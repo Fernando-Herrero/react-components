@@ -9,7 +9,16 @@ import nikeBoots from "./assets/zapatillas-nike.jpg";
 export const App = () => {
 	return (
 		<>
-			<UserCard name="Fer" age={30} city="Madrid" image={spiderImage} nameAvatar={"Fer"} buttonText="Click me!" />
+			<UserCard
+				name="Fer"
+				age={30}
+				city="Madrid"
+				image={spiderImage}
+				nameAvatar={"Fer"}
+				buttonText="Click me!"
+				textQuote="In the middle of every difficulty lies opportunity."
+				author="Albert Einstein"
+			/>
 			<WelcomeMessage name="Fer" />
 
 			<UserCard
@@ -19,6 +28,8 @@ export const App = () => {
 				image={helaImage}
 				nameAvatar={"Paola"}
 				buttonText="Send me!"
+				textQuote="The only limit to our realization of tomorrow is our doubts of today."
+				author="Franklin D. Roosevelt"
 			/>
 			<WelcomeMessage name="Paola" />
 
@@ -28,6 +39,7 @@ export const App = () => {
 				price={250}
 				description={"High-performance football boots designed for speed and agility on the pitch."}
 				alertType="info"
+				number={0}
 			/>
 		</>
 	);
