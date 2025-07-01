@@ -3,6 +3,8 @@ import { UserCard } from "./components/UserCard/UserCard.jsx";
 import helaImage from "./assets/hela.webp";
 import spiderImage from "./assets/spider-man.jpg";
 import { WelcomeMessage } from "./components/WelcomeMesssage/WelcomeMessage.jsx";
+import { Product } from "./components/Product/Product.jsx";
+import nikeBoots from "./assets/zapatillas-nike.jpg";
 
 export const App = () => {
 	return (
@@ -19,6 +21,13 @@ export const App = () => {
 				buttonText="Send me!"
 			/>
 			<WelcomeMessage name="Paola" />
+
+			<Product
+				image={nikeBoots}
+				name={"Nike Mercurial Vapor Fly VII"}
+				price={250}
+				description={"High-performance football boots designed for speed and agility on the pitch."}
+			/>
 		</>
 	);
 };
